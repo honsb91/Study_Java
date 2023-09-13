@@ -2,6 +2,7 @@ package pack01.variable;
 
 public class Ex01_Variable {
 	public static void main(String[] args) {
+		//https://meet.jit.si/hanul_201A
 		// 변수라는 것은 값을 저장하기 위한 것.
 		// 변수의 타입 변수 이름 ; <= 변수의 선언 : 이 타입의 변수를 해당 이름으로 사용할 것을 미리 알려줌.
 		// 변수에 값 할당 : 변수명 = 변수타입에 맞는 값 ;
