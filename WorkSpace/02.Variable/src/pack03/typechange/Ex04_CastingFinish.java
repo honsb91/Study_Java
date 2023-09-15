@@ -21,5 +21,6 @@ public class Ex04_CastingFinish {
 		
 		//int 형태로 변환 된 200의 값을 short 에 담아보기.
 		//이 때 사용되는 캐스팅은 무엇일까요?
+		
 	}
 }
