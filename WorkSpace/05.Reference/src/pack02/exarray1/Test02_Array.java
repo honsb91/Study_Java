@@ -14,9 +14,19 @@ public class Test02_Array {
 		int[] intArr = new int[9];
 		
 		
-		for(int i=1 ; i<intArr.length ; i++) {
-			intArr[i] = i;
+		for(int i=0 ; i<intArr.length ; i++) {
+			intArr[i] = (i+1)*2;
 			System.out.println("2 X "+ i +" = " + 2*i);
 		}
+		
+		String[] starArr = new String[5];
+		for(int i=0; i<starArr.length; i++) {
+			if(i==0) {
+				starArr[i] = "★";
+			}else {
+				starArr[i] = starArr[i-1] + "★";
+			}
+		}
+		System.out.println("");
 	}
 }
