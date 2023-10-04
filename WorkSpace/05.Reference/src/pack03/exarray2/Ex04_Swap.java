@@ -14,8 +14,16 @@ public class Ex04_Swap {
 		//swap의 개념을 이용하여 오름차순 또는 내림차순으로 바꿔보기
 		int temp;
 		int[] arr= {3, 5, 7, 9, 1, 2, 4, 10 };
-		for (int i = 0; i < arr.length; i++) {
-		    System.out.print(arr[i] + " ");
-		}
+		for(int i=0; i<arr.length; i++){
+			   for(int j=0; j<i; j++){
+			      if(arr[i]>arr[j]){
+			         temp = arr[i];
+			         arr[i] = arr[j];
+			         arr[j] = temp;
+			      }
+			   }
+			   System.out.print(arr[i]+",");
+				
+			}
 	}
 }
