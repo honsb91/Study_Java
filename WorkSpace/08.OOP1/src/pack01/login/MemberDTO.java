@@ -1,5 +1,8 @@
 package pack01.login;
 
+import java.util.HashMap;
+
 public class MemberDTO {
-	String id , pw;
+	HashMap<String, String> idPw = new HashMap<>();
+	String id, pw;
 }
