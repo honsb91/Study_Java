@@ -1,19 +1,18 @@
 package product;
 
+import java.util.Scanner;
+
 public class ProductMain {
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in); 
 		ProductDTO[] sport = new ProductDTO[3];
 		
 		
-		sport[0] = new ProductDTO("it","축구공", 50000);
-		sport[1] = new ProductDTO("미술","배구공", 30000);
-		sport[2] = new ProductDTO("음","농구공", 40000);
+		sport[0] = new ProductDTO("공종류","축구공", 50000);
+		sport[1] = new ProductDTO("","배구공", 30000);
+		sport[2] = new ProductDTO("","농구공", 40000);
 		
-		System.out.println(sport[0]);
-		System.out.println(sport[1]);
-		System.out.println(sport[2]);
-		System.out.println("=========================================================================");
 		
 		for(int i = 0; i<sport.length; i++) {
 			System.out.println(sport[i].getCategory() + "\t");
@@ -21,10 +20,6 @@ public class ProductMain {
 			System.out.printf("%,d원\t", sport[i].getPrice());
 		}
 		
-		for(ProductDTO dto : sport) {
-			System.out.printf("%s\t",dto.getCategory());
-			System.out.printf("%s\t",dto.getName());
-			System.out.printf("%d\t",dto.getPrice());
-		}
+		
 	}
 }
