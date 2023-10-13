@@ -2,29 +2,52 @@ package product;
 
 public class ProductDTO {
 	
-	private int product_id;
-    private String product_name;
-    private int price;
+	private String category; // 카테고리.
+    private String name; // 이름.
+    private int price; // 가격.
     
+    public ProductDTO() {} // 인자가 없는 기본 생성자.
     
-	public int getProduct_id() {
-		return product_id;
+    public ProductDTO(String category, String name, int price) {
+    	
+    	this.category = category;
+    	this.name = name;
+    	this.price = price;
+    }
+    
+
+	public String getCategory() {
+		return category;
 	}
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
-	public String getProduct_name() {
-		return product_name;
+
+	public String getName() {
+		return name;
 	}
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
+
+	public void setName(String name) {
+		this.name = name;
 	}
+
 	public int getPrice() {
 		return price;
 	}
+
 	public void setPrice(int price) {
 		this.price = price;
 	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
