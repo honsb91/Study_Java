@@ -8,6 +8,6 @@ public class SportMain {
 		
 		SportDTO[] sport = new SportDTO[5];
 		
-		
+		sport[0] = new SportDTO("축구공",)
 	}
 }
