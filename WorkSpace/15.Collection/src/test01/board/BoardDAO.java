@@ -4,7 +4,6 @@ import java.util.List;
 
 public class BoardDAO {
 
-		List<BoardDTO> list = new BoardDTO(BoardDTO dto);
 		public void writer() {
 			System.out.println();
 			
