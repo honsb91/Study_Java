@@ -62,7 +62,7 @@ public class MemberDAO {
 		if(isConnection()) {
 			try {
 				PreparedStatement ps = conn.prepareStatement(" SELECT FROM MEMBER WHERE ID = ? ");
-				ResultSet rs = ps.executeQuery();
+				ResultSet rs = ps.executeQuery();			  
 
 				ps.setString(1, id);
 								
@@ -96,7 +96,7 @@ public class MemberDAO {
 		if(isConnection()) {
 			try {
 				PreparedStatement ps = conn.prepareStatement("UPDATE MEMBER " + "SET PW = ? "	+ " WHERE ID = ? ");
-				ps.setString(1, dto.getPw());
+				ps.setString(1, dto.getPw());	
 				ps.setString(2, dto.getId());
 				
 				int result = ps.executeUpdate();
